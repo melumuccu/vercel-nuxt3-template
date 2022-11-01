@@ -1,0 +1,68 @@
+{
+  "name": "Vercel x Nuxt.js",
+  "dockerFile": "../Dockerfile",
+  "extensions": [
+    "vue.volar", // Volar(Vue.jsのシンタックスハイライトなど)
+    "dbaeumer.vscode-eslint", // ESLint
+    // その他Util
+    "nemesv.copy-file-name",
+    "oderwat.indent-rainbow",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "wayou.vscode-todo-highlight"
+  ],
+  "settings": {
+    //==========================================
+    // Util
+    //==========================================
+    // ESLint
+    "eslint.validate": [
+      "vue",
+      "html",
+      "javascript",
+      "typescript"
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.trimAutoWhitespace": true,
+    "editor.tabSize": 2,
+    "editor.bracketPairColorization.enabled": true, // bracketPairColor
+    "editor.guides.bracketPairs": true, // bracketPairColor
+    "editor.renderLineHighlight": "all", // 選択行の行番号をハイライトする
+    //==========================================
+    // 各言語
+    //==========================================
+    // TS
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.suggest.completeFunctionCalls": true,
+    //==========================================
+    // 拡張機能
+    //==========================================
+    // todo Highlight
+    "todohighlight.keywords": [
+      {
+        "text": "TODO",
+        "color": "#fff",
+        "backgroundColor": "#ff4500"
+      },
+      {
+        "text": "FIXME",
+        "color": "#fff",
+        "backgroundColor": "#006400"
+      },
+      {
+        "text": "DEBUG",
+        "color": "#fff",
+        "backgroundColor": "#FF9900"
+      },
+      {
+        "text": "MEMO",
+        "color": "#fff",
+        "backgroundColor": "#235BC8"
+      }
+    ]
+  }
+}
